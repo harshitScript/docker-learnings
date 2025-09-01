@@ -1,0 +1,9 @@
+services:
+  server:
+    image: docker-compose-node-app
+    ports:
+      - "8080:3000"
+  client:
+    image: docker-compose-react-app
+    ports:
+      - "3000:4173"
