@@ -1,0 +1,18 @@
+services:
+  server1:
+    image: log-aggregation-node-server
+    ports:
+      - "4000:3000"
+    #hostname: server1
+    volumes:
+      - "log-aggregation:/server/logs" # <volume>:</folder/path/in/image>
+  server2:
+    image: log-aggregation-node-server
+    ports:
+      - "4001:3000"
+    #hostname: server2
+    volumes:
+      - "log-aggregation:/server/logs" # <volume>:</folder/path/in/image>
+
+volumes:
+  log-aggregation:

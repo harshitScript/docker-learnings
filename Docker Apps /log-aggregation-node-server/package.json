@@ -1,0 +1,16 @@
+{
+  "name": "log-aggregation-node-server",
+  "version": "1.0.0",
+  "description": "A server to check the functionality of log aggregation via docker volume between two conatiners.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "generate-volume": "docker volume create log-aggregation"
+  },
+  "author": "harshitScript",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
