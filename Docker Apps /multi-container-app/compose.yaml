@@ -1,0 +1,8 @@
+services:
+  server:
+    image: multi-container-app 
+    ports:
+      - "5500:4000"
+    env_file: ./node-server/.env
+  redis:
+      image: redis
