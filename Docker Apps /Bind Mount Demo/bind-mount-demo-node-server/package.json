@@ -1,0 +1,16 @@
+{
+  "name": "bind-mount-demo-node-server",
+  "version": "1.0.0",
+  "description": "A server application to show the working of bind-mount mechanism provided by docker for real time bi-directional communication between the host machine and the running container. ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "harshitScript",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0"
+  }
+}
