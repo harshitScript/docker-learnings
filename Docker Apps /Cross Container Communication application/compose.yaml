@@ -1,0 +1,11 @@
+services:
+  server1:
+    image: server1
+    ports:
+      - "4000:4000"
+    env_file: ./server1/.env
+  server2:
+    image: server2
+    ports:
+      - "3000:3000"
+    env_file: ./server2/.env
